@@ -1,4 +1,5 @@
 *{
+    height: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -177,6 +178,24 @@ h1{
     box-shadow: 0px 0px 25px 5px var(--vb-yellow);
     
 }
+
+.slider::-moz-range-thumb{
+    position: relative;
+    appearance: none;
+    background-color: var(--vb-yellow);
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    transition: 100ms ease-in;
+}
+
+.slider::-moz-range-thumb:hover{
+    background-color:var(--dk-violet) ;
+    outline: 2px solid var(--vb-yellow);
+    box-shadow: 0px 0px 25px 5px var(--vb-yellow);
+    
+}
+
 
 .slider:focus{
     outline: 2px solid var(--vb-yellow);
